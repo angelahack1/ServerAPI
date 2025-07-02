@@ -1,5 +1,6 @@
 FROM python:3.12-slim-bookworm
 
+ENV TZ="America/Mexico_City"
 RUN useradd --create-home appuser
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
